@@ -103,7 +103,10 @@ def create_schematic(
     (property "Name" "{ComponentNameValue}" (id 4) (at 0 -1.27 0)
       (effects (font (size 1.27 1.27)) {"" if append_numbers else "hide"})
     )
-    (property "LCSC" "{component_id}" (id 5) (at 0 -6.35 0)
+    (property "Description" "{component_description}" (id 5) (at 0 -3.81 0)
+      (effects (font (size 1.27 1.27)) {"" if component_description != "" else "hide"})
+    )
+    (property "LCSC" "{component_id}" (id 6) (at 0 -6.35 0)
       (effects (font (size 1.27 1.27)) hide)
     ){kicad_schematic.drawing}
   )"""
